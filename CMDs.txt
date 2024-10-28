@@ -70,6 +70,7 @@ https://github.com/PatrickAlphaC/async-python/blob/main/av_async_run.py
 
 git init
 git add .
+git commit -m "commit message"
 git branch -M main
 git remote add origin https://github.com/anajikadam/App_FastAPI.git
 git push -u origin main
