@@ -1,0 +1,104 @@
+
+pip install "fastapi[standard]"
+
+python.exe -m pip install --upgrade pip
+
+pip install -r requirements.txt
+
+pip freeze > requirements.txt
+
+
+
+
+C:\Users\Anaji\AppData\Local\Programs\Python\Python311\python.exe -m venv VenvFastAPI
+VenvFastAPI\Scripts\activate
+
+(VenvFastAPI) D:\Python\App_FastAPI>python
+Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+
+
+my_fastapi_project/
+│
+├── app/
+│   ├── main.py                # Entry point for the FastAPI application
+│   ├── dependencies.py        # Dependency functions (if needed)
+│   ├── models/                # ORM models (e.g., SQLAlchemy)
+│   │   └── __init__.py
+│   ├── routers/               # Router files for different endpoints
+│   │   ├── __init__.py
+│   │   └── example_router.py  # Example router file
+│   ├── schemas/               # Pydantic models for request/response
+│   │   └── __init__.py
+│   ├── services/              # Business logic for each endpoint
+│   │   └── __init__.py
+│   └── config.py              # Configuration (e.g., database URL, env vars)
+│
+└── run.py                     # File to run the FastAPI app
+
+my_fastapi_project/
+│
+├── app/
+│   ├── main.py                # Entry point for FastAPI app
+│   ├── dependencies.py        # Dependency functions (if needed)
+│   ├── templates/             # HTML templates
+│   │   └── index.html
+│   ├── static/                # Static files (CSS, JS, images)
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   └── js/
+│   │       └── script.js
+│   ├── routers/               # Routers for endpoints
+│   │   ├── __init__.py
+│   │   └── example_router.py  # Example router file
+│   ├── schemas/               # Pydantic models for request/response
+│   │   └── __init__.py
+│   ├── services/              # Business logic for each endpoint
+│   │   └── __init__.py
+│   └── config.py              # Configuration (e.g., database URL, env vars)
+│
+└── run.py                     # File to run the FastAPI app
+
+Resources:
+https://www.youtube.com/watch?v=tGD3653BrZ8
+
+async-python
+https://www.youtube.com/watch?v=nFn4_nA_yk8
+https://github.com/PatrickAlphaC/async-python/blob/main/av_async_run.py
+
+
+git init
+git add README.md
+git add .
+git add filename
+
+# add commit msg
+git commit -m "commit message"
+git commit -m "first commit"
+
+# set branch
+git branch 
+git branch newBranch
+git checkout newBranch
+
+git branch -M main    / master
+git branch -M master
+git branch -M newBranch
+
+# check remot
+git remote -v
+
+# add remote repo
+git remote add origin https
+git push -u origin master
+
+
+git remote add origin https:/
+git push -u origin main   /master
+
+git remote add origin http
+git push -u origin main
+
+
+git pull

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Simple Page</h1>
+</header>
+
+<main>
+    <h2>Click the Button to See a Message</h2>
+    <button id="messageButton">Click Me!</button>
+    <div class="result" id="resultArea"></div>
+</main>
+
+<script>
+    // JavaScript function to display a message
+    document.getElementById('messageButton').addEventListener('click', function() {
+        const resultArea = document.getElementById('resultArea');
+        resultArea.innerHTML = "Hello! You've clicked the button!";
+    });
+</script>
+
+</body>
+</html>
